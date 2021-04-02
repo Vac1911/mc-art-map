@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+canvas {
+    image-rendering: pixelated;
+    height: 30vw;
+    background: slategray;
+}
