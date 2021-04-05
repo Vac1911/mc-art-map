@@ -1,18 +1,24 @@
 import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import paletteText from "./palette.txt";
+import paints from "./paints";
 import Color from "colorjs.io";
 import {octree} from "d3-octree";
 
-let palette = paletteText
+let paletteArr = [...paletteText
     .split("\n")
     .map(p =>
         p
             .trim()
             .replaceAll(/(\s+)/g, ",")
             .split(",")
-            .map((b) => parseInt(b) / 255)
-    )
+            .map(b => parseInt(b))
+    )];
+
+// console.log(paletteArr.chunk(4));
+
+let palette = paletteArr
+    .map(p => p.map(b => b / 255))
     .map((rgb) => new Color("sRGB", rgb).to("lab"));
 let paletteOct = octree()
     .addAll(
@@ -28,12 +34,12 @@ let imgData = [],
     progress = document.getElementById("progress");
 
 canvasOutput.width = canvasInput.width = 32;
-canvasOutput.height = canvasInput.height = 48;
+canvasOutput.height = canvasInput.height = 32;
 
 upload.crossOrigin = "Anonymous";
 upload.addEventListener("load", (e) => {
     const ctxInput = canvasInput.getContext("2d");
-    ctxInput.drawImage(upload, 0, 0);
+    ctxInput.drawImage(upload, 0, -2);
 
     imgData = [...ctxInput.getImageData(
         0,
@@ -48,16 +54,18 @@ document.getElementById('convert').addEventListener("click", () => {
     writeOutput(processedData);
 
     canvasOutput.addEventListener('click', colorPicker);
-})
+});
 
 //https://stackoverflow.com/questions/1187518/how-to-get-the-difference-between-two-arrays-in-javascript
 function colorPicker(event) {
-
-    var x = event.layerX;
-    var y = event.layerY;
+    let scale = canvasOutput.width / canvasOutput.getBoundingClientRect().width;
+    var x = Math.floor(event.layerX * scale);
+    var y = Math.floor(event.layerY * scale);
     var pixel = ctxOutput.getImageData(x, y, 1, 1);
     var data = pixel.data;
-    console.log(pixel, event);
+
+    let found = paletteArr.findIndex(p => p.join() === [data[0], data[1], data[2]].join());
+    console.log([x,y], paints[Math.floor(found / 4)], found % 4);
 }
 
 function writeOutput(pixels) {
