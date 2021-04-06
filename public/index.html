@@ -7,15 +7,33 @@
 
 <body>
 <div id="app" class="container">
-  <img id="upload" class="d-none" src="/monalisa.jpg">
+  <img id="upload" class="d-none" src="/cyndraquil.jpg">
   <div class="d-flex justify-content-between my-3">
     <div>
-    <button id="convert" class="btn btn-primary">Convert</button>
+      <button id="convert" class="btn btn-primary">Convert</button>
     </div>
   </div>
-  <div class="d-flex justify-content-between my-2">
-    <canvas id="canvas-input" height="0"></canvas>
-    <canvas id="canvas-output" height="0"></canvas>
+  <div class="canvas-grid">
+    <div class="sample">
+      <canvas id="canvas-input" height="0"></canvas>
+      <div class="sample--label">Input</div>
+    </div>
+    <div class="sample">
+      <canvas id="lab-output" height="0"></canvas>
+      <div class="sample--label">LAB Closest</div>
+    </div>
+    <div class="sample">
+      <canvas id="lab-normalized-output" height="0"></canvas>
+      <div class="sample--label">Normalized LAB Closest</div>
+    </div>
+    <div class="sample">
+      <canvas id="hue-sensitive-output" height="0"></canvas>
+      <div class="sample--label">Hue Sensitive Closest</div>
+    </div>
+    <div class="sample">
+      <canvas id="hue-insensitive-output" height="0"></canvas>
+      <div class="sample--label">Hue Insensitive Closest</div>
+    </div>
   </div>
 </div>
 </body>

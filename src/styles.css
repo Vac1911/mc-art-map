@@ -4,6 +4,23 @@ body {
 
 canvas {
     image-rendering: pixelated;
-    height: 30vw;
+    height: 250px;
+    width: 250px;
     background: slategray;
+}
+
+.canvas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+}
+
+.sample {
+    display: flex;
+}
+
+.sample--label {
+    padding: 2rem;
+    flex-grow: 1;
+    align-self: center;
 }

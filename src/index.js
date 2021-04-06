@@ -2,8 +2,9 @@ import "./styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import paletteText from "./palette.txt";
 import paints from "./paints";
-import Color from "colorjs.io";
-import {octree} from "d3-octree";
+import labClosest from "./methods/lab-closest";
+import {hueSensitiveClosest, hueInsensitiveClosest} from "./methods/hue-weighted";
+import labNormalizedClosest from "./methods/lab-normalized-closest";
 
 let paletteArr = [...paletteText
     .split("\n")
@@ -15,26 +16,14 @@ let paletteArr = [...paletteText
             .map(b => parseInt(b))
     )];
 
-// console.log(paletteArr.chunk(4));
-
-let palette = paletteArr
-    .map(p => p.map(b => b / 255))
-    .map((rgb) => new Color("sRGB", rgb).to("lab"));
-let paletteOct = octree()
-    .addAll(
-        palette.map(c => c.coords)
-    );
-
 const canvasInput = document.getElementById("canvas-input"),
-    canvasOutput = document.getElementById("canvas-output"),
     upload = document.getElementById("upload");
-const ctxOutput = canvasOutput.getContext("2d");
+let imgData = [];
 
-let imgData = [],
-    progress = document.getElementById("progress");
-
-canvasOutput.width = canvasInput.width = 32;
-canvasOutput.height = canvasInput.height = 32;
+Array.from(document.querySelectorAll('canvas')).forEach( c => {
+    c.width = 32;
+    c.height = 32;
+})
 
 upload.crossOrigin = "Anonymous";
 upload.addEventListener("load", (e) => {
@@ -50,42 +39,39 @@ upload.addEventListener("load", (e) => {
 });
 
 document.getElementById('convert').addEventListener("click", () => {
-    const processedData = applyPalette(imgData);
-    writeOutput(processedData);
-
-    canvasOutput.addEventListener('click', colorPicker);
+    canvasOutput('lab-output', labClosest)
+    canvasOutput('lab-normalized-output', labNormalizedClosest)
+    canvasOutput('hue-sensitive-output', hueSensitiveClosest)
+    canvasOutput('hue-insensitive-output', hueInsensitiveClosest)
 });
 
+function canvasOutput(canvasId, method) {
+    const canvas = document.getElementById(canvasId),
+        ctx = canvas.getContext("2d");
+
+    const processedData = method(imgData, paletteArr);
+    writeOutput(processedData, canvas, ctx);
+    canvas.addEventListener('click', (e) => colorPicker(e, canvas, ctx));
+}
+
 //https://stackoverflow.com/questions/1187518/how-to-get-the-difference-between-two-arrays-in-javascript
-function colorPicker(event) {
-    let scale = canvasOutput.width / canvasOutput.getBoundingClientRect().width;
+function colorPicker(event, canvas, ctx) {
+    let scale = canvas.width / canvas.getBoundingClientRect().width;
     var x = Math.floor(event.layerX * scale);
     var y = Math.floor(event.layerY * scale);
-    var pixel = ctxOutput.getImageData(x, y, 1, 1);
+    var pixel = ctx.getImageData(x, y, 1, 1);
     var data = pixel.data;
 
     let found = paletteArr.findIndex(p => p.join() === [data[0], data[1], data[2]].join());
     console.log([x,y], paints[Math.floor(found / 4)], found % 4);
 }
 
-function writeOutput(pixels) {
-    let outputData = Uint8ClampedArray.from(pixels.map(p => p.to('srgb'))
+function writeOutput(data, canvas, ctx) {
+    let outputData = Uint8ClampedArray.from(
+        data.map(p => p.to('srgb'))
         .map(c => [...c.coords.map(v => Math.round(v * 255)), 255])
-        .flat());
-    let nextImageData = new ImageData(outputData, canvasOutput.width, canvasOutput.height);
-    ctxOutput.putImageData(nextImageData, 0, 0);
-}
-
-function applyPalette(imgData) {
-    let outputData = [];
-
-    var t0 = performance.now();
-    for (let i = 0; i < imgData.length; i += 4) {
-        const color = new Color('srgb', [imgData[i] / 255, imgData[i + 1] / 255, imgData[i + 2] / 255]).to('lab'),
-            neighborColor = new Color("lab", paletteOct.find(...color.coords));
-        outputData.push(neighborColor);
-    }
-    var t1 = performance.now();
-    console.log("applyPalette finished in " + (t1 - t0).toFixed(2) + " milliseconds.");
-    return outputData;
+        .flat()
+    );
+    let nextImageData = new ImageData(outputData, canvas.width, canvas.height);
+    ctx.putImageData(nextImageData, 0, 0);
 }
