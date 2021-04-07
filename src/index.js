@@ -5,6 +5,7 @@ import paints from "./paints";
 import labClosest from "./methods/lab-closest";
 import {hueSensitiveClosest, hueInsensitiveClosest} from "./methods/hue-weighted";
 import labNormalizedClosest from "./methods/lab-normalized-closest";
+import rgbClosest from "./methods/rgb-closest";
 
 let paletteArr = [...paletteText
     .split("\n")
@@ -41,6 +42,7 @@ upload.addEventListener("load", (e) => {
 document.getElementById('convert').addEventListener("click", () => {
     canvasOutput('lab-output', labClosest)
     canvasOutput('lab-normalized-output', labNormalizedClosest)
+    canvasOutput('rgb-output', rgbClosest)
     canvasOutput('hue-sensitive-output', hueSensitiveClosest)
     canvasOutput('hue-insensitive-output', hueInsensitiveClosest)
 });
