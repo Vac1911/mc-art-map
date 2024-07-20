@@ -4,8 +4,8 @@ import Color from "colorjs.io";
 export default function labClosest(imgData, paletteArr) {
     const paletteOct = octree()
         .addAll(
-            paletteArr.map(p => p.map(b => b / 255))
-                .map(rgb => new Color("sRGB", rgb).to("lab"))
+            paletteArr
+                .map(block => new Color("sRGB", [block.color.r / 255, block.color.g / 255, block.color.b / 255]).to('lab'))
                 .map(c => c.coords)
         );
     let outputData = [];

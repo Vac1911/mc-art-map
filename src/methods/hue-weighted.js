@@ -16,8 +16,8 @@ function hueWeighted(imgData, paletteArr, hueWeight) {
 
     const paletteOct = octree()
         .addAll(
-            paletteArr.map(p => p.map(b => b / 255))
-                .map(rgb => new Color("sRGB", rgb).to('lch'))
+            paletteArr
+                .map(block => new Color("sRGB", [block.color.r / 255, block.color.g / 255, block.color.b / 255]).to('lch'))
                 .map(c => weightedLch(c.coords))
         );
     let outputData = [];

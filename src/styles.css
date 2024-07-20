@@ -4,14 +4,14 @@ body {
 
 canvas {
     image-rendering: pixelated;
-    height: 250px;
-    width: 250px;
+    /* height: 250px;
+    width: 250px; */
     background: slategray;
 }
 
 .canvas-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-gap: 0.5em;
 }
 

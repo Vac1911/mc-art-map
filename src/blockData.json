@@ -1,0 +1,639 @@
+[
+  {
+    "imagePath": "/blocks/white_wool.png",
+    "javaId": "minecraft:white_wool",
+    "bedrockId": "wool",
+    "jname": "白色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 233,
+      "g": 236,
+      "b": 236
+    },
+    "hex": "#e9ecec"
+  },
+  {
+    "imagePath": "/blocks/light_gray_wool.png",
+    "javaId": "minecraft:light_gray_wool",
+    "bedrockId": "wool 8",
+    "jname": "薄灰色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 142,
+      "g": 142,
+      "b": 134
+    },
+    "hex": "#8e8e86"
+  },
+  {
+    "imagePath": "/blocks/gray_wool.png",
+    "javaId": "minecraft:gray_wool",
+    "bedrockId": "wool 7",
+    "jname": "灰色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 62,
+      "g": 68,
+      "b": 71
+    },
+    "hex": "#3e4447"
+  },
+  {
+    "imagePath": "/blocks/black_wool.png",
+    "javaId": "minecraft:black_wool",
+    "bedrockId": "wool 15",
+    "jname": "黒色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 20,
+      "g": 21,
+      "b": 25
+    },
+    "hex": "#141519"
+  },
+  {
+    "imagePath": "/blocks/brown_wool.png",
+    "javaId": "minecraft:brown_wool",
+    "bedrockId": "wool 12",
+    "jname": "茶色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 114,
+      "g": 71,
+      "b": 40
+    },
+    "hex": "#724728"
+  },
+  {
+    "imagePath": "/blocks/red_wool.png",
+    "javaId": "minecraft:red_wool",
+    "bedrockId": "wool 14",
+    "jname": "赤色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 160,
+      "g": 39,
+      "b": 34
+    },
+    "hex": "#a02722"
+  },
+  {
+    "imagePath": "/blocks/orange_wool.png",
+    "javaId": "minecraft:orange_wool",
+    "bedrockId": "wool 1",
+    "jname": "橙色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 240,
+      "g": 118,
+      "b": 19
+    },
+    "hex": "#f07613"
+  },
+  {
+    "imagePath": "/blocks/yellow_wool.png",
+    "javaId": "minecraft:yellow_wool",
+    "bedrockId": "wool 4",
+    "jname": "黄色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 248,
+      "g": 197,
+      "b": 39
+    },
+    "hex": "#f8c527"
+  },
+  {
+    "imagePath": "/blocks/lime_wool.png",
+    "javaId": "minecraft:lime_wool",
+    "bedrockId": "wool 5",
+    "jname": "黄緑色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 112,
+      "g": 185,
+      "b": 25
+    },
+    "hex": "#70b919"
+  },
+  {
+    "imagePath": "/blocks/green_wool.png",
+    "javaId": "minecraft:green_wool",
+    "bedrockId": "wool 13",
+    "jname": "緑色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 84,
+      "g": 109,
+      "b": 27
+    },
+    "hex": "#546d1b"
+  },
+  {
+    "imagePath": "/blocks/cyan_wool.png",
+    "javaId": "minecraft:cyan_wool",
+    "bedrockId": "wool 9",
+    "jname": "青緑色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 21,
+      "g": 137,
+      "b": 145
+    },
+    "hex": "#158991"
+  },
+  {
+    "imagePath": "/blocks/light_blue_wool.png",
+    "javaId": "minecraft:light_blue_wool",
+    "bedrockId": "wool 3",
+    "jname": "空色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 58,
+      "g": 175,
+      "b": 217
+    },
+    "hex": "#3aafd9"
+  },
+  {
+    "imagePath": "/blocks/blue_wool.png",
+    "javaId": "minecraft:blue_wool",
+    "bedrockId": "wool 11",
+    "jname": "青色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 53,
+      "g": 57,
+      "b": 157
+    },
+    "hex": "#35399d"
+  },
+  {
+    "imagePath": "/blocks/purple_wool.png",
+    "javaId": "minecraft:purple_wool",
+    "bedrockId": "wool 10",
+    "jname": "紫色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 121,
+      "g": 42,
+      "b": 172
+    },
+    "hex": "#792aac"
+  },
+  {
+    "imagePath": "/blocks/magenta_wool.png",
+    "javaId": "minecraft:magenta_wool",
+    "bedrockId": "wool 2",
+    "jname": "赤紫色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 189,
+      "g": 68,
+      "b": 179
+    },
+    "hex": "#bd44b3"
+  },
+  {
+    "imagePath": "/blocks/pink_wool.png",
+    "javaId": "minecraft:pink_wool",
+    "bedrockId": "wool 6",
+    "jname": "桃色の羊毛",
+    "blockGroup": "wool",
+    "color": {
+      "r": 237,
+      "g": 141,
+      "b": 172
+    },
+    "hex": "#ed8dac"
+  },
+  {
+    "javaId": "minecraft:white_concrete",
+    "bedrockId": "concrete",
+    "jname": "白色のコンクリート",
+    "imagePath": "/blocks/white_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 207,
+      "g": 213,
+      "b": 214
+    },
+    "hex": "#cfd5d6"
+  },
+  {
+    "javaId": "minecraft:light_gray_concrete",
+    "bedrockId": "concrete 8",
+    "jname": "薄灰色のコンクリート",
+    "imagePath": "/blocks/light_gray_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 125,
+      "g": 125,
+      "b": 115
+    },
+    "hex": "#7d7d73"
+  },
+  {
+    "javaId": "minecraft:gray_concrete",
+    "bedrockId": "concrete 7",
+    "jname": "灰色のコンクリート",
+    "imagePath": "/blocks/gray_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 54,
+      "g": 57,
+      "b": 61
+    },
+    "hex": "#36393d"
+  },
+  {
+    "javaId": "minecraft:black_concrete",
+    "bedrockId": "concrete 15",
+    "jname": "黒色のコンクリート",
+    "imagePath": "/blocks/black_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 8,
+      "g": 10,
+      "b": 15
+    },
+    "hex": "#080a0f"
+  },
+  {
+    "javaId": "minecraft:brown_concrete",
+    "bedrockId": "concrete 12",
+    "jname": "茶色のコンクリート",
+    "imagePath": "/blocks/brown_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 96,
+      "g": 59,
+      "b": 31
+    },
+    "hex": "#603b1f"
+  },
+  {
+    "javaId": "minecraft:red_concrete",
+    "bedrockId": "concrete 14",
+    "jname": "赤色のコンクリート",
+    "imagePath": "/blocks/red_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 142,
+      "g": 32,
+      "b": 32
+    },
+    "hex": "#8e2020"
+  },
+  {
+    "javaId": "minecraft:orange_concrete",
+    "bedrockId": "concrete 1",
+    "jname": "橙色のコンクリート",
+    "imagePath": "/blocks/orange_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 224,
+      "g": 97,
+      "b": 0
+    },
+    "hex": "#e06100"
+  },
+  {
+    "javaId": "minecraft:yellow_concrete",
+    "bedrockId": "concrete 4",
+    "jname": "黄色のコンクリート",
+    "imagePath": "/blocks/yellow_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 240,
+      "g": 175,
+      "b": 21
+    },
+    "hex": "#f0af15"
+  },
+  {
+    "javaId": "minecraft:lime_concrete",
+    "bedrockId": "concrete 5",
+    "jname": "黄緑色のコンクリート",
+    "imagePath": "/blocks/lime_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 94,
+      "g": 168,
+      "b": 24
+    },
+    "hex": "#5ea818"
+  },
+  {
+    "javaId": "minecraft:green_concrete",
+    "bedrockId": "concrete 13",
+    "jname": "緑色のコンクリート",
+    "imagePath": "/blocks/green_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 73,
+      "g": 91,
+      "b": 36
+    },
+    "hex": "#495b24"
+  },
+  {
+    "javaId": "minecraft:cyan_concrete",
+    "bedrockId": "concrete 9",
+    "jname": "青緑色のコンクリート",
+    "imagePath": "/blocks/cyan_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 21,
+      "g": 119,
+      "b": 136
+    },
+    "hex": "#157788"
+  },
+  {
+    "javaId": "minecraft:light_blue_concrete",
+    "bedrockId": "concrete 3",
+    "jname": "空色のコンクリート",
+    "imagePath": "/blocks/light_blue_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 35,
+      "g": 137,
+      "b": 198
+    },
+    "hex": "#2389c6"
+  },
+  {
+    "javaId": "minecraft:blue_concrete",
+    "bedrockId": "concrete 11",
+    "jname": "青色のコンクリート",
+    "imagePath": "/blocks/blue_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 44,
+      "g": 46,
+      "b": 143
+    },
+    "hex": "#2c2e8f"
+  },
+  {
+    "javaId": "minecraft:purple_concrete",
+    "bedrockId": "concrete 10",
+    "jname": "紫色のコンクリート",
+    "imagePath": "/blocks/purple_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 100,
+      "g": 31,
+      "b": 156
+    },
+    "hex": "#641f9c"
+  },
+  {
+    "javaId": "minecraft:magenta_concrete",
+    "bedrockId": "concrete 2",
+    "jname": "赤紫色のコンクリート",
+    "imagePath": "/blocks/magenta_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 169,
+      "g": 48,
+      "b": 159
+    },
+    "hex": "#a9309f"
+  },
+  {
+    "javaId": "minecraft:pink_concrete",
+    "bedrockId": "concrete 6",
+    "jname": "桃色のコンクリート",
+    "imagePath": "/blocks/pink_concrete.png",
+    "blockGroup": "concrete",
+    "color": {
+      "r": 213,
+      "g": 101,
+      "b": 142
+    },
+    "hex": "#d5658e"
+  },
+  {
+    "javaId": "minecraft:white_terracotta",
+    "bedrockId": "stained_hardened_clay",
+    "jname": "白色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_white.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 209,
+      "g": 178,
+      "b": 161
+    },
+    "hex": "#d1b2a1"
+  },
+  {
+    "javaId": "minecraft:light_gray_terracotta",
+    "bedrockId": "stained_hardened_clay 8",
+    "jname": "薄灰色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_silver.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 135,
+      "g": 106,
+      "b": 97
+    },
+    "hex": "#876a61"
+  },
+  {
+    "javaId": "minecraft:gray_terracotta",
+    "bedrockId": "stained_hardened_clay 7",
+    "jname": "灰色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_gray.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 57,
+      "g": 42,
+      "b": 35
+    },
+    "hex": "#392a23"
+  },
+  {
+    "javaId": "minecraft:black_terracotta",
+    "bedrockId": "stained_hardened_clay 15",
+    "jname": "黒色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_black.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 37,
+      "g": 22,
+      "b": 16
+    },
+    "hex": "#251610"
+  },
+  {
+    "javaId": "minecraft:brown_terracotta",
+    "bedrockId": "stained_hardened_clay 12",
+    "jname": "茶色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_brown.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 77,
+      "g": 51,
+      "b": 35
+    },
+    "hex": "#4d3323"
+  },
+  {
+    "javaId": "minecraft:red_terracotta",
+    "bedrockId": "stained_hardened_clay 14",
+    "jname": "赤色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_red.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 143,
+      "g": 61,
+      "b": 46
+    },
+    "hex": "#8f3d2e"
+  },
+  {
+    "javaId": "minecraft:orange_terracotta",
+    "bedrockId": "stained_hardened_clay 1",
+    "jname": "橙色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_orange.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 161,
+      "g": 83,
+      "b": 37
+    },
+    "hex": "#a15325"
+  },
+  {
+    "javaId": "minecraft:yellow_terracotta",
+    "bedrockId": "stained_hardened_clay 4",
+    "jname": "黄色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_yellow.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 186,
+      "g": 133,
+      "b": 35
+    },
+    "hex": "#ba8523"
+  },
+  {
+    "javaId": "minecraft:lime_terracotta",
+    "bedrockId": "stained_hardened_clay 5",
+    "jname": "黄緑色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_lime.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 103,
+      "g": 117,
+      "b": 52
+    },
+    "hex": "#677534"
+  },
+  {
+    "javaId": "minecraft:green_terracotta",
+    "bedrockId": "stained_hardened_clay 13",
+    "jname": "緑色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_green.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 76,
+      "g": 83,
+      "b": 42
+    },
+    "hex": "#4c532a"
+  },
+  {
+    "javaId": "minecraft:cyan_terracotta",
+    "bedrockId": "stained_hardened_clay 9",
+    "jname": "青緑色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_cyan.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 86,
+      "g": 91,
+      "b": 91
+    },
+    "hex": "#565b5b"
+  },
+  {
+    "javaId": "minecraft:light_blue_terracotta",
+    "bedrockId": "stained_hardened_clay 3",
+    "jname": "空色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_light_blue.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 113,
+      "g": 108,
+      "b": 137
+    },
+    "hex": "#716c89"
+  },
+  {
+    "javaId": "minecraft:blue_terracotta",
+    "bedrockId": "stained_hardened_clay 11",
+    "jname": "青色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_blue.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 74,
+      "g": 59,
+      "b": 91
+    },
+    "hex": "#4a3b5b"
+  },
+  {
+    "javaId": "minecraft:purple_terracotta",
+    "bedrockId": "stained_hardened_clay 10",
+    "jname": "紫色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_purple.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 118,
+      "g": 70,
+      "b": 86
+    },
+    "hex": "#764656"
+  },
+  {
+    "javaId": "minecraft:magenta_terracotta",
+    "bedrockId": "stained_hardened_clay 2",
+    "jname": "赤紫色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_magenta.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 149,
+      "g": 88,
+      "b": 108
+    },
+    "hex": "#95586c"
+  },
+  {
+    "javaId": "minecraft:pink_terracotta",
+    "bedrockId": "stained_hardened_clay 6",
+    "jname": "桃色のテラコッタ",
+    "imagePath": "/blocks/hardened_clay_stained_pink.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 161,
+      "g": 78,
+      "b": 78
+    },
+    "hex": "#a14e4e"
+  },
+  {
+    "javaId": "minecraft:terracotta",
+    "bedrockId": "hardened_clay",
+    "jname": "テラコッタ",
+    "imagePath": "/blocks/hardened_clay.png",
+    "blockGroup": "terracotta",
+    "color": {
+      "r": 150,
+      "g": 92,
+      "b": 66
+    },
+    "hex": "#965c42"
+  }
+]
